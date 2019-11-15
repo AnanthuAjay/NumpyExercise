@@ -1,0 +1,15 @@
+name: useage
+
+on: [deployment_status]
+
+jobs:
+  build:
+
+    runs-on: [windows]
+
+    steps:
+    - uses: jupyter notebook
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo deploy your project.
